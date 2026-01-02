@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+                               "http://jakarta.apache.org/struts/dtds/struts-config_1_0.dtd">
+<struts-config>
+
+	<!-- Origens de dados -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Beans de formulário -->
+	<form-beans>
+		<form-bean name="TipoEmpregadorForm" type="br.smat.web.tipoempregador.TipoEmpregadorActionForm">
+		</form-bean>
+		<form-bean name="EmpregadorForm" type="br.smat.web.empregador.EmpregadorActionForm">
+		</form-bean>
+		<form-bean name="TelefoneEmpregadorForm" type="br.smat.web.telefoneempregador.TelefoneEmpregadorActionForm">
+		</form-bean>
+		<form-bean name="PesquisaEmpregador" type="br.smat.web.pesquisaempregador.PesquisaEmpregadorActionForm">
+		</form-bean>
+		<form-bean name="AcidentePassoUm" type="br.smat.web.acidentepassoum.AcidentePassoUmActionForm">
+		</form-bean>
+		<form-bean name="AcidentePassoDois" type="br.smat.web.acidentepassodois.AcidentePassoDoisActionForm">
+		</form-bean>
+		<form-bean name="AcidentePassoTres" type="br.smat.web.acidentepassotres.AcidentePassoTresActionForm">
+		</form-bean>
+		<form-bean name="AcidentePassoQuatro" type="br.smat.web.acidentepassoquatro.AcidentePassoQuatroActionForm">
+		</form-bean>
+		<form-bean name="AcidenteGravar" type="br.smat.web.acidentegravar.AcidenteGravarActionForm">
+		</form-bean>
+		<form-bean name="ParametrosRelatorio" type="br.smat.web.parametrosrelatorio.ParametrosRelatorioActionForm">
+		</form-bean>
+		<form-bean name="RelatorioSalvo" type="br.smat.web.relatoriosalvo.RelatorioSalvoActionForm">
+		</form-bean>
+		<form-bean name="Login" type="br.smat.web.login.LoginActionForm">
+		</form-bean>
+		<form-bean name="PesquisaAcidente" type="br.smat.web.pesquisaacidente.PesquisaAcidenteActionForm">
+		</form-bean>
+		<form-bean name="ResultadoPesquisaAcidente" type="br.smat.web.pesquisaacidente.ResultadoPesquisaAcidenteActionForm">
+		</form-bean>
+		<form-bean name="CadastroInvestigacao" type="br.smat.web.investigacao.cadastro.CadastroInvestigacaoActionForm">
+		</form-bean>		
+		<form-bean name="PontosFiscalizacao" type="br.smat.web.parametros.pontosfiscalizacao.PontosFiscalizacaoActionForm">
+		</form-bean>
+		<form-bean name="ItemFiscalizacao" type="br.smat.web.parametros.itensfiscalizacao.ItemFiscalizacaoActionForm">
+		</form-bean>
+		<form-bean name="VinculoItemPontoFiscalizacao" type="br.smat.web.parametros.vinculoitempontofiscalizacao.VinculoItemPontoFiscalizacaoActionForm">
+		</form-bean>
+		<form-bean name="CadastroFiscalizacao" type="br.smat.web.fiscalizacao.cadastro.CadastroFiscalizacaoActionForm">
+		</form-bean>
+		<form-bean name="Fiscalizacoes" type="br.smat.web.fiscalizacao.fiscalizacoes.FiscalizacoesActionForm">
+		</form-bean>
+		<form-bean name="TramiteFiscalizacao" type="br.smat.web.fiscalizacao.tramite.TramiteFiscalizacaoActionForm">
+		</form-bean>
+		<form-bean name="DetalhesInvestigacao" type="br.smat.web.investigacao.detalhesinvestigacao.DetalhesInvestigacaoActionForm">
+		</form-bean>
+		<form-bean name="Depoimentos" type="br.smat.web.investigacao.depoimentos.DepoimentosActionForm">
+		</form-bean>
+		<form-bean name="PesquisaPessoa" type="br.smat.web.pessoas.PesquisaPessoaActionForm">
+		</form-bean>
+		<form-bean name="CadastroTestemunha" type="br.smat.web.pessoas.cadastrotestemunha.CadastroTestemunhaActionForm">
+		</form-bean>
+		<form-bean name="CadastroRepresentante" type="br.smat.web.pessoas.cadastrorepresentante.CadastroRepresentanteActionForm">
+		</form-bean>
+		<form-bean name="CadastroRoteiro" type="br.smat.web.fiscalizacao.cadastroroteiro.CadastroRoteiroActionForm">
+		</form-bean>
+		<form-bean name="MedidasCorretivasFiscalizacao" type="br.smat.web.fiscalizacao.medidascorretivas.MedidasCorretivasFiscalizacaoActionForm">
+		</form-bean>
+		<form-bean name="MonitorForm" type="br.smat.web.monitor.MonitorActionForm">
+		</form-bean>
+		<form-bean name="MedidasCorretivasInvestigacao" type="br.smat.web.investigacao.medidascorretivasinvestigacao.MedidasCorretivasInvestigacaoActionForm">
+		</form-bean>
+		<form-bean name="AgenteCausador"  type="br.smat.web.parametros.agentecausador.AgenteCausadorActionForm">
+		</form-bean>
+		<form-bean name="LocalAtendimento" type="br.smat.web.parametros.localatendimento.LocalAtendimentoActionForm">
+		</form-bean>
+		<form-bean name="Regional" type="br.smat.web.parametros.regionais.RegionalActionForm">
+		</form-bean>
+		<form-bean name="AgenteSaudeForm" type="br.smat.web.pessoas.agentesaude.AgenteSaudeActionForm">
+		</form-bean>
+		<form-bean name="CadastroUsuarioForm" type="br.smat.web.administrador.usuarios.CadastroUsuarioActionForm">
+		</form-bean>
+		<form-bean name="UsuarioGrupoForm" type="br.smat.web.administrador.grupos.UsuarioGrupoActionForm">
+		</form-bean>
+		<form-bean name="LocaisLesaoForm" type="br.smat.web.parametros.locaislesao.LocaisLesaoActionForm">
+		</form-bean>
+		<form-bean name="RamoAtividadeForm" type="br.smat.web.parametros.acidente.ramoatividade.RamoAtividadeActionForm">
+		</form-bean>
+		<form-bean name="TelefoneRegionalForm" type="br.smat.web.parametros.regionais.TelefoneRegionalActionForm">
+		</form-bean>
+
+	</form-beans>
+
+	<!-- Encaminhamentos globais -->
+
+	<!-- Mapeamentos Action -->
+	<global-forwards>
+		<forward name="LoginInit" path='/Login.do?acao=FALSE' redirect="true"/>
+		<forward name="AccessDenied" path="/accessdenied.jsp" redirect="true">
+		</forward>
+		<forward name="erroDefault" path="error.jsp" redirect="false">
+		</forward>
+		<forward name="LoginIndex" path="/Login.do" redirect="true">
+		</forward>
+	</global-forwards>
+	<action-mappings>
+		<action path="/empregadores/TipoEmpregador" 
+				name="TipoEmpregadorForm" 
+				scope="request" 
+				validate="true" 
+				input="empregadores/tipoempregador.jsp" 
+				type="br.smat.web.tipoempregador.TipoEmpregadorAction">
+			<forward name="TipoEmpregador" path="empregadores/tipoempregador.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>		
+		</action>
+		<action path="/empregadores/Empregador" 
+				name="EmpregadorForm" 
+				scope="request" 
+				validate="true" 
+				input="empregadores/empregador.jsp"
+				type="br.smat.web.empregador.EmpregadorAction" >
+			<forward name="Empregador" path="empregadores/empregador.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>
+		</action>
+		<action path="/empregadores/TelefoneEmpregador" 
+		        name="TelefoneEmpregadorForm" 
+		        scope="request" 
+		        validate="true"		        
+		        input="empregadores/telefonesempregador.jsp" 
+		        type="br.smat.web.telefoneempregador.TelefoneEmpregadorAction" >
+			<forward name="TelefoneEmpregador" path="empregadores/telefonesempregador.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>
+		</action>
+		<action path="/empregadores/PesquisaEmpregador" 
+		        name="PesquisaEmpregador" 		
+		        scope="request" 
+		        validate="true"		        
+		        input="empregadores/pesquisaempregador.jsp"
+		        type="br.smat.web.pesquisaempregador.PesquisaEmpregadorAction" >
+			<forward name="PASSOUM" path="cadastroacidente/cad_acidente_passo1.jsp">
+			</forward>		        
+			<forward name="PesquisaEmpregador" path="empregadores/pesquisaempregador.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>
+		</action>
+		<action path="/cadastroacidente/AcidentePassoUm" 
+				name="AcidentePassoUm"
+				scope="request"
+				validate="true"
+				type="br.smat.web.acidentepassoum.AcidentePassoUmAction" 
+				input="/cadastroacidente/cad_acidente_passo1.jsp" >
+			<forward name="AVANCAR" path="cadastroacidente/cad_acidente_passo2.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>
+			<forward name="AcidentePassoUm" path="/cadastroacidente/cad_acidente_passo1.jsp">
+			</forward>			
+		</action>
+		<action path="/cadastroacidente/AcidentePassoDois" 
+				name="AcidentePassoDois"
+				scope="request"
+				validate="true"
+		        type="br.smat.web.acidentepassodois.AcidentePassoDoisAction"
+		        input="/cadastroacidente/cad_acidente_passo2.jsp">
+			<forward name="VOLTAR" path="cadastroacidente/cad_acidente_passo1.jsp">
+			</forward>
+			<forward name="AcidentePassoDois" path="cadastroacidente/cad_acidente_passo2.jsp">
+			</forward>		
+			<forward name="AVANCAR" path="cadastroacidente/cad_acidente_passo3.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>			
+		</action>
+		<action path="/cadastroacidente/AcidentePassoTres" 
+				name="AcidentePassoTres" 
+				scope="request" 
+				validate="true"
+		        type="br.smat.web.acidentepassotres.AcidentePassoTresAction" 
+		        input="/cadastroacidente/cad_acidente_passo3.jsp" >
+			<forward name="VOLTAR" path="cadastroacidente/cad_acidente_passo2.jsp">
+			</forward>		
+			<forward name="AcidentePassoTres" path="cadastroacidente/cad_acidente_passo3.jsp">
+			</forward>
+			<forward name="AVANCAR" path="cadastroacidente/cad_acidente_passo4.jsp">
+			</forward>
+			<forward name="error." path="error.jsp">
+			</forward>			
+		</action>
+		<action path="/cadastroacidente/AcidentePassoQuatro" 
+				name="AcidentePassoQuatro" 
+				scope="request" 
+				validate="true"
+				type="br.smat.web.acidentepassoquatro.AcidentePassoQuatroAction" 
+				input="/cadastroacidente/cad_acidente_passo4.jsp" >
+			<forward name="VOLTAR" path="cadastroacidente/cad_acidente_passo3.jsp">
+			</forward>				
+			<forward name="AcidentePassoQuatro" path="cadastroacidente/cad_acidente_passo4.jsp">
+			</forward>
+			<forward name="AVANCAR" path="cadastroacidente/cad_acidente_gravar.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>		     			
+		</action>
+		<action path="/cadastroacidente/AcidenteGravar" 
+		        type="br.smat.web.acidentegravar.AcidenteGravarAction" 
+		        name="AcidenteGravar" 
+		        input="/cadastroacidente/cad_acidente_gravar.jsp" 
+		        scope="request" 
+		        validate="true">
+			<forward name="VOLTAR" path="cadastroacidente/cad_acidente_passo4.jsp">
+			</forward>				
+			<forward name="AcidenteGravar" path="cadastroacidente/cad_acidente_gravar.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>		        
+		</action>
+		<action path="/cadastroacidente/VisualizaAcidente" type="br.smat.web.visualizaacidenteaction.VisualizaAcidenteAction">
+			<forward name="VisualizaFormAcidente" path="cadastroacidente/visualizaformacidente.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>
+		</action>
+		<action path="/relatorios/ParametrosRelatorio" type="br.smat.web.parametrosrelatorio.ParametrosRelatorioAction" 
+		        input="relatorios/parametrosrelatorio.jsp" 
+		        name="ParametrosRelatorio" 
+		        scope="session" validate="true">
+			<forward name="ParametrosRelatorio" path="relatorios/parametrosrelatorio.jsp">
+			</forward>
+			<forward name="Relatorio" path="relatorios/relatorio.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>			
+		</action>
+		<action path="/relatorios/RelatorioSalvo" type="br.smat.web.relatoriosalvo.RelatorioSalvoAction" 
+		        input="relatorios/relatoriosalvo.jsp" name="RelatorioSalvo" scope="request" validate="true">
+			<forward name="RelatorioSalvo" path="relatorios/relatoriosalvo.jsp">
+			</forward>
+			<forward name="error" path="error.jsp">
+			</forward>
+		</action>
+		<action path="/Login" input="login.jsp" type="br.smat.web.login.LoginAction" name="Login" scope="request" validate="true">
+			<forward name="Login" path="login.jsp" redirect="false">
+			</forward>
+			<forward name="Smat" path="index.jsp" redirect="true">
+			</forward>
+		</action>
+		<action path="/cadastroacidente/PesquisaAcidente" type="br.smat.web.pesquisaacidente.PesquisaAcidenteAction" input="cadastroacidente/pesquisaacidente.jsp" name="PesquisaAcidente" scope="request" validate="true">
+			<forward name="PesquisaAcidente" path="cadastroacidente/pesquisaacidente.jsp">
+			</forward>
+			<forward name="ResultadoPesquisa" path="cadastroacidente/resultadopesquisa.jsp">
+			</forward>
+		</action>
+		<action path="/cadastroacidente/ResultadoPesquisaAcidente" type="br.smat.web.pesquisaacidente.ResultadoPesquisaAcidenteAction" name="ResultadoPesquisaAcidente" scope="request" validate="true" input="cadastroacidente/resultadopesquisa.jsp">
+			<forward name="ResultadoPesquisaAcidente" path="cadastroacidente/resultadopesquisa.jsp">
+			</forward>
+			<forward name="PesquisaAcidente" path="cadastroacidente/PesquisaAcidente.do">
+			</forward>
+			<forward name="CadastroInvestigacao" path="investigacao/CadastroInvestigacao.do">
+			</forward>
+		</action>
+		<action path="/investigacao/CadastroInvestigacao" type="br.smat.web.investigacao.cadastro.CadastroInvestigacaoAction" input="investigacao/cadastroinvestigacao.jsp" name="CadastroInvestigacao" scope="request" validate="true">
+			<forward name="CadastroInvestigacao" path="investigacao/cadastroinvestigacao.jsp">
+			</forward>
+			<forward name="ResultadoPesquisaAcidente" path="cadastroacidente/ResultadoPesquisaAcidente.do">
+			</forward>
+		</action>
+		<action path="/parametros/fiscalizacao/PontosFiscalizacao" 
+				type="br.smat.web.parametros.pontosfiscalizacao.PontosFiscalizacaoAction" 
+				input="parametros/fiscalizacao/pontosfiscalizacao.jsp" 
+				name="PontosFiscalizacao" scope="request" validate="true">
+			<forward name="PontosFiscalizacao" path="parametros/fiscalizacao/pontosfiscalizacao.jsp">
+			</forward>
+		</action>
+		<action path="/parametros/fiscalizacao/ItemFiscalizacao" 
+				type="br.smat.web.parametros.itensfiscalizacao.ItemFiscalizacaoAction" 
+				name="ItemFiscalizacao" 
+				input="parametros/fiscalizacao/itensfiscalizacao.jsp" 
+				scope="request" validate="true">
+			<forward name="ItemFiscalizacao" path="parametros/fiscalizacao/itensfiscalizacao.jsp">
+			</forward>
+		</action>
+		<action path="/parametros/fiscalizacao/VinculoItemPontoFiscalizacao" 
+				type="br.smat.web.parametros.vinculoitempontofiscalizacao.VinculoItemPontoFiscalizacaoAction" 
+				input="parametros/fiscalizacao/vinculoitempontofiscalizacao.jsp" 
+				name="VinculoItemPontoFiscalizacao" 
+				scope="request" 
+				validate="true">
+			<forward name="VinculoItemPontoFiscalizacao" path="parametros/fiscalizacao/vinculoitempontofiscalizacao.jsp">
+			</forward>				
+		</action>
+		<action path="/fiscalizacao/Cadastro" 
+				type="br.smat.web.fiscalizacao.cadastro.CadastroFiscalizacaoAction" 
+				input="fiscalizacao/cadastro.jsp" 
+				name="CadastroFiscalizacao" 
+				scope="request" 
+				validate="true">
+			<forward name="CadastroFiscalizacao" path="fiscalizacao/cadastro.jsp">
+			</forward>				
+			<forward name="PesquisaEmpregador" path="empregadores/pesquisaempregador.jsp">
+			</forward>								
+		</action>
+		<action path="/fiscalizacao/Fiscalizacoes" 
+				type="br.smat.web.fiscalizacao.fiscalizacoes.FiscalizacoesAction" 
+				input="fiscalizacao/fiscalizacoes.jsp" 
+				name="Fiscalizacoes" 
+				scope="request" 
+				validate="true">
+			<forward name="Fiscalizacoes" path="fiscalizacao/fiscalizacoes.jsp">
+			</forward>											
+		</action>
+		<action path="/fiscalizacao/Tramite" 
+				type="br.smat.web.fiscalizacao.tramite.FiscalizacaoTramiteAction" 
+				input="fiscalizacao/tramitefiscalizacao.jsp" 
+				name="TramiteFiscalizacao" 
+				scope="request" 
+				validate="true">
+			<forward name="TramiteFiscalizacao" path="fiscalizacao/tramitefiscalizacao.jsp">
+			</forward>																	
+		</action>
+		<action path="/investigacao/DetalhesInvestigacao" type="br.smat.web.investigacao.detalhesinvestigacao.DetalhesInvestigacaoAction" input="investigacao/detalhesinvestigacao.jsp" name="DetalhesInvestigacao" scope="request" validate="true">
+			<forward name="DetalhesInvestigacao" path="investigacao/detalhesinvestigacao.jsp">
+			</forward>
+		</action>
+		<action path="/investigacao/Depoimentos" type="br.smat.web.investigacao.depoimentos.DepoimentosAction" input="investigacao/depoimentos.jsp" name="Depoimentos" scope="session" validate="true">
+			<forward name="Depoimentos" path="investigacao/depoimentos.jsp">
+			</forward>
+		</action>
+		<action path="/pessoas/PesquisaPessoa" type="br.smat.web.pessoas.PesquisaPessoaAction" input="pessoas/pesquisapessoa.jsp" name="PesquisaPessoa" scope="request" validate="true">
+			<forward name="PesquisaPessoa" path="pessoas/pesquisapessoa.jsp">
+			</forward>
+		</action>
+		<action path="/pessoas/CadastroTestemunha" type="br.smat.web.pessoas.cadastrotestemunha.CadastroTestemunhaAction" input="pessoas/cadastrotestemunha.jsp" name="CadastroTestemunha" scope="request" validate="true">
+			<forward name="CadastroTestemunha" path="pessoas/cadastrotestemunha.jsp">
+			</forward>
+		</action>
+		<action path="/pessoas/CadastroRepresentante" type="br.smat.web.pessoas.cadastrorepresentante.CadastroRepresentanteAction" input="pessoas/cadastrorepresentante.jsp" name="CadastroRepresentante" scope="request" validate="true">
+			<forward name="CadastroRepresentante" path="pessoas/cadastrorepresentante.jsp">
+			</forward>
+		</action>
+		<action path="/fiscalizacao/CadastroRoteiro" 
+				type="br.smat.web.fiscalizacao.cadastroroteiro.CadastroRoteiroAction" 
+				input="fiscalizacao/cadastroroteiro.jsp" 
+				name="CadastroRoteiro" 
+				scope="request" 
+				validate="true">
+			<forward name="CadastroRoteiro" path="fiscalizacao/cadastroroteiro.jsp">
+			</forward>																					
+		</action>
+		<action path="/fiscalizacao/MedidasCorretivas" 
+				type="br.smat.web.fiscalizacao.medidascorretivas.MedidasCorretivasAction" 
+				input="fiscalizacao/medidascorretivas.jsp" 
+				name="MedidasCorretivasFiscalizacao" 
+				scope="request" 
+				validate="true">
+			<forward name="MedidasCorretivasFiscalizacao" path="fiscalizacao/medidascorretivas.jsp">
+			</forward>																					
+				
+		</action>
+		<action path="/monitor/Monitor" 
+				type="br.smat.web.monitor.MonitorAction" 
+				input="monitor/monitor.jsp" 
+				name="MonitorForm" 
+				scope="request" 
+				validate="true">
+			<forward name="Monitor" path="monitor/monitor.jsp">
+			</forward>																									
+		</action>
+		<action path="/investigacao/MedidasCorretivasInvestigacao" type="br.smat.web.investigacao.medidascorretivasinvestigacao.MedidasCorretivasInvestigacaoAction" input="investigacao/medidascorretivasinvestigacao.jsp" name="MedidasCorretivasInvestigacao" scope="request" validate="true">
+			<forward name="MedidasCorretivasInvestigacao" path="investigacao/medidascorretivasinvestigacao.jsp">
+			</forward>
+		</action>
+		<action path="/parametros/acidente/AgenteCausador" type="br.smat.web.parametros.agentecausador.AgenteCausadorAction" input="parametros/acidente/agentecausador.jsp" name="AgenteCausador" scope="request" validate="true">
+			<forward name="AgenteCausador" path="parametros/acidente/agentecausador.jsp">
+			</forward>
+		</action>
+		<action path="/parametros/acidente/LocalAtendimento" type="br.smat.web.parametros.localatendimento.LocalAtendimentoAction" input="parametros/acidente/localatendimento.jsp" name="LocalAtendimento" scope="request" validate="true">
+			<forward name="LocalAtendimento" path="parametros/acidente/localatendimento.jsp">
+			</forward>
+		</action>
+		<action path="/parametros/regionais/Regional" type="br.smat.web.parametros.regionais.RegionalAction" input="parametros/regionais/regional.jsp" name="Regional" scope="request" validate="true">
+			<forward name="Regional" path="parametros/regionais/regional.jsp">
+			</forward>
+		</action>
+		<action path="/pessoas/AgenteSaude" 
+				type="br.smat.web.pessoas.agentesaude.AgenteSaudeAction" 
+				input="/pessoas/agentesaude.jsp" 
+				name="AgenteSaudeForm" 
+				scope="request" 
+				validate="true">
+			<forward name="AgenteSaude" path="pessoas/agentesaude.jsp">
+			</forward>																													
+		</action>
+		<action path="/administrador/Usuarios" 
+				type="br.smat.web.administrador.usuarios.CadastroUsuarioAction" 
+				input="/administrador/usuarios.jsp" 
+				name="CadastroUsuarioForm" 
+				scope="request" validate="true">
+			<forward name="CadastroUsuario" path="administrador/usuarios.jsp">
+			</forward>																													
+				
+		</action>
+		<action path="/administrador/UsuarioGrupo" 
+				type="br.smat.web.administrador.grupos.UsuarioGrupoAction" 
+				input="/administrador/grupos.jsp" 
+				name="UsuarioGrupoForm" 
+				validate="true">
+			<forward name="UsuarioGrupo" path="administrador/grupos.jsp">
+			</forward>																																	
+		</action>
+		<action path="/LogOff" 
+				type="br.smat.web.logoff.LogOffAction">
+			<forward name="LogOff" path="/Login.do">
+			</forward>																																					
+		</action>
+		<action path="/parametros/acidente/LocaisLesao" 
+				type="br.smat.web.parametros.locaislesao.LocaisLesaoAction" 
+				input="parametros/acidente/locaislesao.jsp" 
+				name="LocaisLesaoForm" 
+				scope="request" 
+				validate="true">
+			<forward name="LocaisLesao" path="parametros/acidente/locaislesao.jsp">
+			</forward>																																									
+		</action>
+		<action path="/parametros/acidente/RamoAtividade" 
+				type="br.smat.web.parametros.acidente.ramoatividade.RamoAtividadeAction" 
+				input="parametros/acidente/ramoatividade.jsp" 
+				name="RamoAtividadeForm" 
+				scope="request" 
+				validate="true">
+			<forward name="RamoAtividade" path="parametros/acidente/ramoatividade.jsp">
+			</forward>																																													
+		</action>
+		<action path="/parametros/regionais/TelefoneRegional" 
+				type="br.smat.web.parametros.regionais.TelefoneRegionalAction" 
+				input="parametros/regionais/telefonesregionais.jsp" 
+				name="TelefoneRegionalForm" 
+				scope="request" 
+				validate="true">
+			<forward name="TelefoneRegional" path="parametros/regionais/telefonesregionais.jsp">
+			</forward>																																																	
+		</action>
+	</action-mappings>
+</struts-config>

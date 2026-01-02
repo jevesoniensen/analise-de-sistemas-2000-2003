@@ -1,0 +1,187 @@
+package br.smat.ejb.monitor;
+import com.ibm.ejs.container.*;
+import javax.ejb.*;
+import java.rmi.RemoteException;
+/**
+ * EJSLocalBMPMonitorHome_4daaff17
+ * @generated
+ */
+public class EJSLocalBMPMonitorHome_4daaff17
+	extends EJSLocalWrapper
+	implements br.smat.ejb.monitor.MonitorLocalHome {
+	/**
+	 * EJSLocalBMPMonitorHome_4daaff17
+	 * @generated
+	 */
+	public EJSLocalBMPMonitorHome_4daaff17() {
+		super();
+	}
+	/**
+	 * create
+	 * @generated
+	 */
+	public br.smat.ejb.monitor.MonitorLocal create(
+		int periodicidade,
+		int campo,
+		int queryCampo,
+		int maxAcidente)
+		throws javax.ejb.CreateException {
+		EJSDeployedSupport _EJS_s = container.getEJSDeployedSupport(this);
+		br.smat.ejb.monitor.MonitorLocal _EJS_result = null;
+		try {
+			br.smat.ejb.monitor.EJSBMPMonitorHomeBean_4daaff17 _EJS_beanRef =
+				(
+					br
+						.smat
+						.ejb
+						.monitor
+						.EJSBMPMonitorHomeBean_4daaff17) container
+						.preInvoke(
+					this,
+					0,
+					_EJS_s);
+			_EJS_result =
+				_EJS_beanRef.create_Local(
+					periodicidade,
+					campo,
+					queryCampo,
+					maxAcidente);
+		} catch (javax.ejb.CreateException ex) {
+			_EJS_s.setCheckedException(ex);
+			throw ex;
+		} catch (java.rmi.RemoteException ex) {
+			_EJS_s.setUncheckedLocalException(ex);
+		} catch (Throwable ex) {
+			_EJS_s.setUncheckedLocalException(ex);
+		} finally {
+			try {
+				container.postInvoke(this, 0, _EJS_s);
+			} catch (RemoteException ex) {
+				_EJS_s.setUncheckedLocalException(ex);
+			} finally {
+				container.putEJSDeployedSupport(_EJS_s);
+			}
+		}
+		return _EJS_result;
+	}
+	/**
+	 * findByPrimaryKey
+	 * @generated
+	 */
+	public br.smat.ejb.monitor.MonitorLocal findByPrimaryKey(
+		br.smat.ejb.monitor.MonitorKey primaryKey)
+		throws javax.ejb.FinderException {
+		EJSDeployedSupport _EJS_s = container.getEJSDeployedSupport(this);
+		br.smat.ejb.monitor.MonitorLocal _EJS_result = null;
+		try {
+			br.smat.ejb.monitor.EJSBMPMonitorHomeBean_4daaff17 _EJS_beanRef =
+				(
+					br
+						.smat
+						.ejb
+						.monitor
+						.EJSBMPMonitorHomeBean_4daaff17) container
+						.preInvoke(
+					this,
+					1,
+					_EJS_s);
+			_EJS_result = _EJS_beanRef.findByPrimaryKey_Local(primaryKey);
+		} catch (javax.ejb.FinderException ex) {
+			_EJS_s.setCheckedException(ex);
+			throw ex;
+		} catch (java.rmi.RemoteException ex) {
+			_EJS_s.setUncheckedLocalException(ex);
+		} catch (Throwable ex) {
+			_EJS_s.setUncheckedLocalException(ex);
+		} finally {
+			try {
+				container.postInvoke(this, 1, _EJS_s);
+			} catch (RemoteException ex) {
+				_EJS_s.setUncheckedLocalException(ex);
+			} finally {
+				container.putEJSDeployedSupport(_EJS_s);
+			}
+		}
+		return _EJS_result;
+	}
+	/**
+	 * findAllMonitores
+	 * @generated
+	 */
+	public java.util.Collection findAllMonitores()
+		throws javax.ejb.FinderException {
+		EJSDeployedSupport _EJS_s = container.getEJSDeployedSupport(this);
+		java.util.Collection _EJS_result = null;
+		try {
+			br.smat.ejb.monitor.EJSBMPMonitorHomeBean_4daaff17 _EJS_beanRef =
+				(
+					br
+						.smat
+						.ejb
+						.monitor
+						.EJSBMPMonitorHomeBean_4daaff17) container
+						.preInvoke(
+					this,
+					2,
+					_EJS_s);
+			_EJS_result = _EJS_beanRef.findAllMonitores_Local();
+		} catch (javax.ejb.FinderException ex) {
+			_EJS_s.setCheckedException(ex);
+			throw ex;
+		} catch (java.rmi.RemoteException ex) {
+			_EJS_s.setUncheckedLocalException(ex);
+		} catch (Throwable ex) {
+			_EJS_s.setUncheckedLocalException(ex);
+		} finally {
+			try {
+				container.postInvoke(this, 2, _EJS_s);
+			} catch (RemoteException ex) {
+				_EJS_s.setUncheckedLocalException(ex);
+			} finally {
+				container.putEJSDeployedSupport(_EJS_s);
+			}
+		}
+		return _EJS_result;
+	}
+	/**
+	 * remove
+	 * @generated
+	 */
+	public void remove(java.lang.Object arg0)
+		throws javax.ejb.RemoveException, javax.ejb.EJBException {
+		EJSDeployedSupport _EJS_s = container.getEJSDeployedSupport(this);
+
+		try {
+			br.smat.ejb.monitor.EJSBMPMonitorHomeBean_4daaff17 _EJS_beanRef =
+				(
+					br
+						.smat
+						.ejb
+						.monitor
+						.EJSBMPMonitorHomeBean_4daaff17) container
+						.preInvoke(
+					this,
+					3,
+					_EJS_s);
+			_EJS_beanRef.remove(arg0);
+		} catch (javax.ejb.RemoveException ex) {
+			_EJS_s.setCheckedException(ex);
+			throw ex;
+		} catch (javax.ejb.EJBException ex) {
+			_EJS_s.setUncheckedLocalException(ex);
+		} catch (java.rmi.RemoteException ex) {
+			_EJS_s.setUncheckedLocalException(ex);
+		} catch (Throwable ex) {
+			_EJS_s.setUncheckedLocalException(ex);
+		} finally {
+			try {
+				container.postInvoke(this, 3, _EJS_s);
+			} catch (RemoteException ex) {
+				_EJS_s.setUncheckedLocalException(ex);
+			} finally {
+				container.putEJSDeployedSupport(_EJS_s);
+			}
+		}
+		return;
+	}
+}

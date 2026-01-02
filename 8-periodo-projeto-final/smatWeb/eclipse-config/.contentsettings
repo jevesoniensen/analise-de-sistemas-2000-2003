@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentsettings>
+  <file html-document-type="-//W3C//DTD HTML 4.01 Transitional//EN"
+    jsp-content-type="text/html" jsp-language="java"
+    jsp-page-encoding="ISO-8859-1" path="Web Content/index.jsp"/>
+  <file html-document-type="-//W3C//DTD HTML 4.01 Transitional//EN"
+    jsp-content-type="text/html" jsp-language="java"
+    jsp-page-encoding="ISO-8859-1" path="Web Content/cadastroacidente/cad_acidente_passo1.jsp"/>
+  <file html-document-type="-//W3C//DTD HTML 4.01 Transitional//EN"
+    jsp-content-type="text/html" jsp-language="java"
+    jsp-page-encoding="ISO-8859-1" path="Web Content/empregadores/empregador.jsp"/>
+  <file html-document-type="-//W3C//DTD HTML 4.01 Transitional//EN"
+    jsp-content-type="text/html" jsp-language="java"
+    jsp-page-encoding="ISO-8859-1" path="Web Content/empregadores/pesquisaempregador.jsp"/>
+  <file html-document-type="-//W3C//DTD HTML 4.01 Transitional//EN"
+    jsp-content-type="text/html" jsp-language="java"
+    jsp-page-encoding="ISO-8859-1" path="Web Content/empregadores/telefonesempregador.jsp"/>
+  <file html-document-type="-//W3C//DTD HTML 4.01 Transitional//EN"
+    jsp-content-type="text/html" jsp-language="java"
+    jsp-page-encoding="ISO-8859-1" path="Web Content/empregadores/tipoempregador.jsp"/>
+</contentsettings>

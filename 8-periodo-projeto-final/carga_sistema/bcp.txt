@@ -1,0 +1,5 @@
+bcp puc..agencia out agencia.txt -SServidor -Umomesso -Psenha -c -t+TAB+ -Jiso_1 -T30000000 -r//nrow -eagencia.err
+go
+ 
+bcp puc..agencia in agencia.txt -SServidor -Umomesso -Psenha -c -t+TAB+ -Jiso_1 -T30000000 -r//nrow -b1000 -eagencia.err
+go

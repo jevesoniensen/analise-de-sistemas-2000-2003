@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<ejb-jar id="ejb-jar_ID">
+	<display-name>smatEJB</display-name>
+	<enterprise-beans>
+		<entity id="Estado">
+			<ejb-name>Estado</ejb-name>
+			<home>br.smat.ejb.estado.EstadoHome</home>
+			<remote>br.smat.ejb.estado.Estado</remote>
+			<local-home>br.smat.ejb.estado.EstadoLocalHome</local-home>
+			<local>br.smat.ejb.estado.EstadoLocal</local>
+			<ejb-class>br.smat.ejb.estado.EstadoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.estado.EstadoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1052961134887">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Area">
+			<ejb-name>Area</ejb-name>
+			<home>br.smat.ejb.area.AreaHome</home>
+			<remote>br.smat.ejb.area.Area</remote>
+			<local-home>br.smat.ejb.area.AreaLocalHome</local-home>
+			<local>br.smat.ejb.area.AreaLocal</local>
+			<ejb-class>br.smat.ejb.area.AreaBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.area.AreaKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<ejb-ref id="EjbRef_1053745273183">
+				<description></description>
+				<ejb-ref-name>ejb/Area</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<home>br.smat.ejb.area.AreaHome</home>
+				<remote>br.smat.ejb.area.Area</remote>
+				<ejb-link>Area</ejb-link>
+			</ejb-ref>
+			<ejb-local-ref id="EJBLocalRef_1053745273203">
+				<description></description>
+				<ejb-ref-name>ejb/Area</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>br.smat.ejb.area.AreaLocalHome</local-home>
+				<local>br.smat.ejb.area.AreaLocal</local>
+				<ejb-link>Area</ejb-link>
+			</ejb-local-ref>
+			<resource-ref id="ResourceRef_1053207918610">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Diagnostico">
+			<ejb-name>Diagnostico</ejb-name>
+			<home>br.smat.ejb.diagnostico.DiagnosticoHome</home>
+			<remote>br.smat.ejb.diagnostico.Diagnostico</remote>
+			<local-home>br.smat.ejb.diagnostico.DiagnosticoLocalHome</local-home>
+			<local>br.smat.ejb.diagnostico.DiagnosticoLocal</local>
+			<ejb-class>br.smat.ejb.diagnostico.DiagnosticoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.diagnostico.DiagnosticoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053210079467">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="EstadoCivil">
+			<ejb-name>EstadoCivil</ejb-name>
+			<home>br.smat.ejb.estadocivil.EstadoCivilHome</home>
+			<remote>br.smat.ejb.estadocivil.EstadoCivil</remote>
+			<local-home>br.smat.ejb.estadocivil.EstadoCivilLocalHome</local-home>
+			<local>br.smat.ejb.estadocivil.EstadoCivilLocal</local>
+			<ejb-class>br.smat.ejb.estadocivil.EstadoCivilBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.estadocivil.EstadoCivilKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053394564595">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="VinculoEmpregaticio">
+			<ejb-name>VinculoEmpregaticio</ejb-name>
+			<home>br.smat.ejb.vinculoempregaticio.VinculoEmpregaticioHome</home>
+			<remote>br.smat.ejb.vinculoempregaticio.VinculoEmpregaticio</remote>
+			<local-home>br.smat.ejb.vinculoempregaticio.VinculoEmpregaticioLocalHome</local-home>
+			<local>br.smat.ejb.vinculoempregaticio.VinculoEmpregaticioLocal</local>
+			<ejb-class>br.smat.ejb.vinculoempregaticio.VinculoEmpregaticioBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.vinculoempregaticio.VinculoEmpregaticioKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053556985393">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="TipoAcidente">
+			<ejb-name>TipoAcidente</ejb-name>
+			<home>br.smat.ejb.tipoacidente.TipoAcidenteHome</home>
+			<remote>br.smat.ejb.tipoacidente.TipoAcidente</remote>
+			<local-home>br.smat.ejb.tipoacidente.TipoAcidenteLocalHome</local-home>
+			<local>br.smat.ejb.tipoacidente.TipoAcidenteLocal</local>
+			<ejb-class>br.smat.ejb.tipoacidente.TipoAcidenteBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.tipoacidente.TipoAcidenteKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053653042572">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Emitente">
+			<ejb-name>Emitente</ejb-name>
+			<home>br.smat.ejb.emitente.EmitenteHome</home>
+			<remote>br.smat.ejb.emitente.Emitente</remote>
+			<local-home>br.smat.ejb.emitente.EmitenteLocalHome</local-home>
+			<local>br.smat.ejb.emitente.EmitenteLocal</local>
+			<ejb-class>br.smat.ejb.emitente.EmitenteBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.emitente.EmitenteKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053656770152">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="TipoLocalAcidente">
+			<ejb-name>TipoLocalAcidente</ejb-name>
+			<home>br.smat.ejb.tipolocalacidente.TipoLocalAcidenteHome</home>
+			<remote>br.smat.ejb.tipolocalacidente.TipoLocalAcidente</remote>
+			<local-home>br.smat.ejb.tipolocalacidente.TipoLocalAcidenteLocalHome</local-home>
+			<local>br.smat.ejb.tipolocalacidente.TipoLocalAcidenteLocal</local>
+			<ejb-class>br.smat.ejb.tipolocalacidente.TipoLocalAcidenteBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.tipolocalacidente.TipoLocalAcidenteKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053656770172">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Ocupacao">
+			<ejb-name>Ocupacao</ejb-name>
+			<home>br.smat.ejb.ocupacao.OcupacaoHome</home>
+			<remote>br.smat.ejb.ocupacao.Ocupacao</remote>
+			<local-home>br.smat.ejb.ocupacao.OcupacaoLocalHome</local-home>
+			<local>br.smat.ejb.ocupacao.OcupacaoLocal</local>
+			<ejb-class>br.smat.ejb.ocupacao.OcupacaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.ocupacao.OcupacaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053656770182">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Fonte">
+			<ejb-name>Fonte</ejb-name>
+			<home>br.smat.ejb.fonte.FonteHome</home>
+			<remote>br.smat.ejb.fonte.Fonte</remote>
+			<local-home>br.smat.ejb.fonte.FonteLocalHome</local-home>
+			<local>br.smat.ejb.fonte.FonteLocal</local>
+			<ejb-class>br.smat.ejb.fonte.FonteBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.fonte.FonteKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053656770192">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<session id="AcessoBanco">
+			<ejb-name>AcessoBanco</ejb-name>
+			<home>br.smat.ejb.session.AcessoBancoHome</home>
+			<remote>br.smat.ejb.session.AcessoBanco</remote>
+			<local-home>br.smat.ejb.session.AcessoBancoLocalHome</local-home>
+			<local>br.smat.ejb.session.AcessoBancoLocal</local>
+			<ejb-class>br.smat.ejb.session.AcessoBancoBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-local-ref id="EJBLocalRef_1053746218853">
+				<description></description>
+				<ejb-ref-name>ejb/Area</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>br.smat.ejb.area.AreaLocalHome</local-home>
+				<local>br.smat.ejb.area.AreaLocal</local>
+				<ejb-link>Area</ejb-link>
+			</ejb-local-ref>
+		</session>
+		<entity id="RamoAtividade">
+			<ejb-name>RamoAtividade</ejb-name>
+			<home>br.smat.ejb.ramoatividade.RamoAtividadeHome</home>
+			<remote>br.smat.ejb.ramoatividade.RamoAtividade</remote>
+			<local-home>br.smat.ejb.ramoatividade.RamoAtividadeLocalHome</local-home>
+			<local>br.smat.ejb.ramoatividade.RamoAtividadeLocal</local>
+			<ejb-class>br.smat.ejb.ramoatividade.RamoAtividadeBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.ramoatividade.RamoAtividadeKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053739800364">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="AgenteCausador">
+			<ejb-name>AgenteCausador</ejb-name>
+			<home>br.smat.ejb.agentecausador.AgenteCausadorHome</home>
+			<remote>br.smat.ejb.agentecausador.AgenteCausador</remote>
+			<local-home>br.smat.ejb.agentecausador.AgenteCausadorLocalHome</local-home>
+			<local>br.smat.ejb.agentecausador.AgenteCausadorLocal</local>
+			<ejb-class>br.smat.ejb.agentecausador.AgenteCausadorBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.agentecausador.AgenteCausadorKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053801223209">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Regional">
+			<ejb-name>Regional</ejb-name>
+			<home>br.smat.ejb.regional.RegionalHome</home>
+			<remote>br.smat.ejb.regional.Regional</remote>
+			<local-home>br.smat.ejb.regional.RegionalLocalHome</local-home>
+			<local>br.smat.ejb.regional.RegionalLocal</local>
+			<ejb-class>br.smat.ejb.regional.RegionalBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.regional.RegionalKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053809318880">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Municipio">
+			<ejb-name>Municipio</ejb-name>
+			<home>br.smat.ejb.municipio.MunicipioHome</home>
+			<remote>br.smat.ejb.municipio.Municipio</remote>
+			<local-home>br.smat.ejb.municipio.MunicipioLocalHome</local-home>
+			<local>br.smat.ejb.municipio.MunicipioLocal</local>
+			<ejb-class>br.smat.ejb.municipio.MunicipioBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.municipio.MunicipioKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053809349614">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="LocalLesao">
+			<ejb-name>LocalLesao</ejb-name>
+			<home>br.smat.ejb.locallesao.LocalLesaoHome</home>
+			<remote>br.smat.ejb.locallesao.LocalLesao</remote>
+			<local-home>br.smat.ejb.locallesao.LocalLesaoLocalHome</local-home>
+			<local>br.smat.ejb.locallesao.LocalLesaoLocal</local>
+			<ejb-class>br.smat.ejb.locallesao.LocalLesaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.locallesao.LocalLesaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053814320742">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Medico">
+			<ejb-name>Medico</ejb-name>
+			<home>br.smat.ejb.medico.MedicoHome</home>
+			<remote>br.smat.ejb.medico.Medico</remote>
+			<local-home>br.smat.ejb.medico.MedicoLocalHome</local-home>
+			<local>br.smat.ejb.medico.MedicoLocal</local>
+			<ejb-class>br.smat.ejb.medico.MedicoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.medico.MedicoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053814449117">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="TipoEmpregador">
+			<ejb-name>TipoEmpregador</ejb-name>
+			<home>br.smat.ejb.tipoempregador.TipoEmpregadorHome</home>
+			<remote>br.smat.ejb.tipoempregador.TipoEmpregador</remote>
+			<local-home>br.smat.ejb.tipoempregador.TipoEmpregadorLocalHome</local-home>
+			<local>br.smat.ejb.tipoempregador.TipoEmpregadorLocal</local>
+			<ejb-class>br.smat.ejb.tipoempregador.TipoEmpregadorBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.tipoempregador.TipoEmpregadorKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053814630107">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="TelefoneRegional">
+			<ejb-name>TelefoneRegional</ejb-name>
+			<home>br.smat.ejb.telefoneregional.TelefoneRegionalHome</home>
+			<remote>br.smat.ejb.telefoneregional.TelefoneRegional</remote>
+			<local-home>br.smat.ejb.telefoneregional.TelefoneRegionalLocalHome</local-home>
+			<local>br.smat.ejb.telefoneregional.TelefoneRegionalLocal</local>
+			<ejb-class>br.smat.ejb.telefoneregional.TelefoneRegionalBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.telefoneregional.TelefoneRegionalKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053873038527">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="AgenteSaude">
+			<ejb-name>AgenteSaude</ejb-name>
+			<home>br.smat.ejb.agentesaude.AgenteSaudeHome</home>
+			<remote>br.smat.ejb.agentesaude.AgenteSaude</remote>
+			<local-home>br.smat.ejb.agentesaude.AgenteSaudeLocalHome</local-home>
+			<local>br.smat.ejb.agentesaude.AgenteSaudeLocal</local>
+			<ejb-class>br.smat.ejb.agentesaude.AgenteSaudeBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.agentesaude.AgenteSaudeKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1053996926906">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Empregador">
+			<ejb-name>Empregador</ejb-name>
+			<home>br.smat.ejb.empregador.EmpregadorHome</home>
+			<remote>br.smat.ejb.empregador.Empregador</remote>
+			<local-home>br.smat.ejb.empregador.EmpregadorLocalHome</local-home>
+			<local>br.smat.ejb.empregador.EmpregadorLocal</local>
+			<ejb-class>br.smat.ejb.empregador.EmpregadorBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.empregador.EmpregadorKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1054003977444">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="TelefoneEmpregador">
+			<ejb-name>TelefoneEmpregador</ejb-name>
+			<home>br.smat.ejb.telefoneempregador.TelefoneEmpregadorHome</home>
+			<remote>br.smat.ejb.telefoneempregador.TelefoneEmpregador</remote>
+			<local-home>br.smat.ejb.telefoneempregador.TelefoneEmpregadorLocalHome</local-home>
+			<local>br.smat.ejb.telefoneempregador.TelefoneEmpregadorLocal</local>
+			<ejb-class>br.smat.ejb.telefoneempregador.TelefoneEmpregadorBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.telefoneempregador.TelefoneEmpregadorKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1054170387138">
+				<description></description>
+				<res-ref-name>SQLServer</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Trabalhador">
+			<ejb-name>Trabalhador</ejb-name>
+			<home>br.smat.ejb.trabalhador.TrabalhadorHome</home>
+			<remote>br.smat.ejb.trabalhador.Trabalhador</remote>
+			<local-home>br.smat.ejb.trabalhador.TrabalhadorLocalHome</local-home>
+			<local>br.smat.ejb.trabalhador.TrabalhadorLocal</local>
+			<ejb-class>br.smat.ejb.trabalhador.TrabalhadorBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.trabalhador.TrabalhadorKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1054176428235">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Acidente">
+			<ejb-name>Acidente</ejb-name>
+			<home>br.smat.ejb.acidente.AcidenteHome</home>
+			<remote>br.smat.ejb.acidente.Acidente</remote>
+			<local-home>br.smat.ejb.acidente.AcidenteLocalHome</local-home>
+			<local>br.smat.ejb.acidente.AcidenteLocal</local>
+			<ejb-class>br.smat.ejb.acidente.AcidenteBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.acidente.AcidenteKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1054419876690">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="LocalAtendimento">
+			<ejb-name>LocalAtendimento</ejb-name>
+			<home>br.smat.ejb.localatendimento.LocalAtendimentoHome</home>
+			<remote>br.smat.ejb.localatendimento.LocalAtendimento</remote>
+			<local-home>br.smat.ejb.localatendimento.LocalAtendimentoLocalHome</local-home>
+			<local>br.smat.ejb.localatendimento.LocalAtendimentoLocal</local>
+			<ejb-class>br.smat.ejb.localatendimento.LocalAtendimentoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.localatendimento.LocalAtendimentoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1054420800558">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="LocalLesaoAcidente">
+			<ejb-name>LocalLesaoAcidente</ejb-name>
+			<home>br.smat.ejb.locallesaoacidente.LocalLesaoAcidenteHome</home>
+			<remote>br.smat.ejb.locallesaoacidente.LocalLesaoAcidente</remote>
+			<local-home>br.smat.ejb.locallesaoacidente.LocalLesaoAcidenteLocalHome</local-home>
+			<local>br.smat.ejb.locallesaoacidente.LocalLesaoAcidenteLocal</local>
+			<ejb-class>br.smat.ejb.locallesaoacidente.LocalLesaoAcidenteBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.locallesaoacidente.LocalLesaoAcidenteKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1054593151246">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Testemunha">
+			<ejb-name>Testemunha</ejb-name>
+			<home>br.smat.ejb.testemunha.TestemunhaHome</home>
+			<remote>br.smat.ejb.testemunha.Testemunha</remote>
+			<local-home>br.smat.ejb.testemunha.TestemunhaLocalHome</local-home>
+			<local>br.smat.ejb.testemunha.TestemunhaLocal</local>
+			<ejb-class>br.smat.ejb.testemunha.TestemunhaBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.testemunha.TestemunhaKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1054766956791">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<session id="EmpregadorTransaction">
+			<ejb-name>EmpregadorTransaction</ejb-name>
+			<home>br.smat.transaction.empregadortransaction.EmpregadorTransactionHome</home>
+			<remote>br.smat.transaction.empregadortransaction.EmpregadorTransaction</remote>
+			<local-home>br.smat.transaction.empregadortransaction.EmpregadorTransactionLocalHome</local-home>
+			<local>br.smat.transaction.empregadortransaction.EmpregadorTransactionLocal</local>
+			<ejb-class>br.smat.transaction.empregadortransaction.EmpregadorTransactionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session id="Generico">
+			<ejb-name>Generico</ejb-name>
+			<home>br.smat.objetosauxiliares.generico.GenericoHome</home>
+			<remote>br.smat.objetosauxiliares.generico.Generico</remote>
+			<local-home>br.smat.objetosauxiliares.generico.GenericoLocalHome</local-home>
+			<local>br.smat.objetosauxiliares.generico.GenericoLocal</local>
+			<ejb-class>br.smat.objetosauxiliares.generico.GenericoBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1055289504161">
+				<description></description>
+				<res-ref-name>SQLServer</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<entity id="Campo">
+			<ejb-name>Campo</ejb-name>
+			<home>br.smat.ejb.campo.CampoHome</home>
+			<remote>br.smat.ejb.campo.Campo</remote>
+			<local-home>br.smat.ejb.campo.CampoLocalHome</local-home>
+			<local>br.smat.ejb.campo.CampoLocal</local>
+			<ejb-class>br.smat.ejb.campo.CampoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.campo.CampoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1055379829860">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<session id="AcidenteTransaction">
+			<ejb-name>AcidenteTransaction</ejb-name>
+			<home>br.smat.transaction.acidentetransaction.AcidenteTransactionHome</home>
+			<remote>br.smat.transaction.acidentetransaction.AcidenteTransaction</remote>
+			<local-home>br.smat.transaction.acidentetransaction.AcidenteTransactionLocalHome</local-home>
+			<local>br.smat.transaction.acidentetransaction.AcidenteTransactionLocal</local>
+			<ejb-class>br.smat.transaction.acidentetransaction.AcidenteTransactionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<entity id="RelatorioSalvo">
+			<ejb-name>RelatorioSalvo</ejb-name>
+			<home>br.smat.ejb.relatoriosalvo.RelatorioSalvoHome</home>
+			<remote>br.smat.ejb.relatoriosalvo.RelatorioSalvo</remote>
+			<local-home>br.smat.ejb.relatoriosalvo.RelatorioSalvoLocalHome</local-home>
+			<local>br.smat.ejb.relatoriosalvo.RelatorioSalvoLocal</local>
+			<ejb-class>br.smat.ejb.relatoriosalvo.RelatorioSalvoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.relatoriosalvo.RelatorioSalvoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1056235632005">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="TipoDepoimento">
+			<ejb-name>TipoDepoimento</ejb-name>
+			<home>br.smat.ejb.tipodepoimento.TipoDepoimentoHome</home>
+			<remote>br.smat.ejb.tipodepoimento.TipoDepoimento</remote>
+			<local-home>br.smat.ejb.tipodepoimento.TipoDepoimentoLocalHome</local-home>
+			<local>br.smat.ejb.tipodepoimento.TipoDepoimentoLocal</local>
+			<ejb-class>br.smat.ejb.tipodepoimento.TipoDepoimentoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.tipodepoimento.TipoDepoimentoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1063923187608">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Status">
+			<ejb-name>Status</ejb-name>
+			<home>br.smat.ejb.status.StatusHome</home>
+			<remote>br.smat.ejb.status.Status</remote>
+			<local-home>br.smat.ejb.status.StatusLocalHome</local-home>
+			<local>br.smat.ejb.status.StatusLocal</local>
+			<ejb-class>br.smat.ejb.status.StatusBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.status.StatusKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1063935313254">
+				<description></description>
+				<res-ref-name>SQLServer</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="GrauConformidade">
+			<ejb-name>GrauConformidade</ejb-name>
+			<home>br.smat.ejb.grauconformidade.GrauConformidadeHome</home>
+			<remote>br.smat.ejb.grauconformidade.GrauConformidade</remote>
+			<local-home>br.smat.ejb.grauconformidade.GrauConformidadeLocalHome</local-home>
+			<local>br.smat.ejb.grauconformidade.GrauConformidadeLocal</local>
+			<ejb-class>br.smat.ejb.grauconformidade.GrauConformidadeBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.grauconformidade.GrauConformidadeKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064063806020">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="TipoMedidaCorretiva">
+			<ejb-name>TipoMedidaCorretiva</ejb-name>
+			<home>br.smat.ejb.tipomedidacorretiva.TipoMedidaCorretivaHome</home>
+			<remote>br.smat.ejb.tipomedidacorretiva.TipoMedidaCorretiva</remote>
+			<local-home>br.smat.ejb.tipomedidacorretiva.TipoMedidaCorretivaLocalHome</local-home>
+			<local>br.smat.ejb.tipomedidacorretiva.TipoMedidaCorretivaLocal</local>
+			<ejb-class>br.smat.ejb.tipomedidacorretiva.TipoMedidaCorretivaBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.tipomedidacorretiva.TipoMedidaCorretivaKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064078477426">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="PontoFiscalizacao">
+			<ejb-name>PontoFiscalizacao</ejb-name>
+			<home>br.smat.ejb.pontofiscalizacao.PontoFiscalizacaoHome</home>
+			<remote>br.smat.ejb.pontofiscalizacao.PontoFiscalizacao</remote>
+			<local-home>br.smat.ejb.pontofiscalizacao.PontoFiscalizacaoLocalHome</local-home>
+			<local>br.smat.ejb.pontofiscalizacao.PontoFiscalizacaoLocal</local>
+			<ejb-class>br.smat.ejb.pontofiscalizacao.PontoFiscalizacaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.pontofiscalizacao.PontoFiscalizacaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064084647615">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="PontoFiscalizacaoRamoAtividade">
+			<ejb-name>PontoFiscalizacaoRamoAtividade</ejb-name>
+			<home>br.smat.ejb.pontofiscalizacaoramotividade.PontoFiscalizacaoRamoAtividadeHome</home>
+			<remote>br.smat.ejb.pontofiscalizacaoramotividade.PontoFiscalizacaoRamoAtividade</remote>
+			<local-home>br.smat.ejb.pontofiscalizacaoramotividade.PontoFiscalizacaoRamoAtividadeLocalHome</local-home>
+			<local>br.smat.ejb.pontofiscalizacaoramotividade.PontoFiscalizacaoRamoAtividadeLocal</local>
+			<ejb-class>br.smat.ejb.pontofiscalizacaoramotividade.PontoFiscalizacaoRamoAtividadeBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.pontofiscalizacaoramotividade.PontoFiscalizacaoRamoAtividadeKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064363718053">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="ItemFiscalizacao">
+			<ejb-name>ItemFiscalizacao</ejb-name>
+			<home>br.smat.ejb.itemfiscalizacao.ItemFiscalizacaoHome</home>
+			<remote>br.smat.ejb.itemfiscalizacao.ItemFiscalizacao</remote>
+			<local-home>br.smat.ejb.itemfiscalizacao.ItemFiscalizacaoLocalHome</local-home>
+			<local>br.smat.ejb.itemfiscalizacao.ItemFiscalizacaoLocal</local>
+			<ejb-class>br.smat.ejb.itemfiscalizacao.ItemFiscalizacaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.itemfiscalizacao.ItemFiscalizacaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064364405502">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="PontoFiscalizacaoItemFiscalizacao">
+			<ejb-name>PontoFiscalizacaoItemFiscalizacao</ejb-name>
+			<home>br.smat.ejb.pontofiscalizacaoitemfiscalizacao.PontoFiscalizacaoItemFiscalizacaoHome</home>
+			<remote>br.smat.ejb.pontofiscalizacaoitemfiscalizacao.PontoFiscalizacaoItemFiscalizacao</remote>
+			<local-home>br.smat.ejb.pontofiscalizacaoitemfiscalizacao.PontoFiscalizacaoItemFiscalizacaoLocalHome</local-home>
+			<local>br.smat.ejb.pontofiscalizacaoitemfiscalizacao.PontoFiscalizacaoItemFiscalizacaoLocal</local>
+			<ejb-class>br.smat.ejb.pontofiscalizacaoitemfiscalizacao.PontoFiscalizacaoItemFiscalizacaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.pontofiscalizacaoitemfiscalizacao.PontoFiscalizacaoItemFiscalizacaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064367608778">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Fiscalizacao">
+			<ejb-name>Fiscalizacao</ejb-name>
+			<home>br.smat.ejb.fiscalizacao.FiscalizacaoHome</home>
+			<remote>br.smat.ejb.fiscalizacao.Fiscalizacao</remote>
+			<local-home>br.smat.ejb.fiscalizacao.FiscalizacaoLocalHome</local-home>
+			<local>br.smat.ejb.fiscalizacao.FiscalizacaoLocal</local>
+			<ejb-class>br.smat.ejb.fiscalizacao.FiscalizacaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.fiscalizacao.FiscalizacaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064448713418">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="TramiteFiscalizacao">
+			<ejb-name>TramiteFiscalizacao</ejb-name>
+			<home>br.smat.ejb.tramitefiscalizacao.TramiteFiscalizacaoHome</home>
+			<remote>br.smat.ejb.tramitefiscalizacao.TramiteFiscalizacao</remote>
+			<local-home>br.smat.ejb.tramitefiscalizacao.TramiteFiscalizacaoLocalHome</local-home>
+			<local>br.smat.ejb.tramitefiscalizacao.TramiteFiscalizacaoLocal</local>
+			<ejb-class>br.smat.ejb.tramitefiscalizacao.TramiteFiscalizacaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.tramitefiscalizacao.TramiteFiscalizacaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064536494737">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Roteiros">
+			<ejb-name>Roteiros</ejb-name>
+			<home>br.smat.ejb.roteiros.RoteirosHome</home>
+			<remote>br.smat.ejb.roteiros.Roteiros</remote>
+			<local-home>br.smat.ejb.roteiros.RoteirosLocalHome</local-home>
+			<local>br.smat.ejb.roteiros.RoteirosLocal</local>
+			<ejb-class>br.smat.ejb.roteiros.RoteirosBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.roteiros.RoteirosKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064539229790">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="MedidaCorretivaFiscalizacao">
+			<ejb-name>MedidaCorretivaFiscalizacao</ejb-name>
+			<home>br.smat.ejb.medidacorretivafiscalizacao.MedidaCorretivaFiscalizacaoHome</home>
+			<remote>br.smat.ejb.medidacorretivafiscalizacao.MedidaCorretivaFiscalizacao</remote>
+			<local-home>br.smat.ejb.medidacorretivafiscalizacao.MedidaCorretivaFiscalizacaoLocalHome</local-home>
+			<local>br.smat.ejb.medidacorretivafiscalizacao.MedidaCorretivaFiscalizacaoLocal</local>
+			<ejb-class>br.smat.ejb.medidacorretivafiscalizacao.MedidaCorretivaFiscalizacaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.medidacorretivafiscalizacao.MedidaCorretivaFiscalizacaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064673536508">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Investigacao">
+			<ejb-name>Investigacao</ejb-name>
+			<home>br.smat.ejb.investigacao.InvestigacaoHome</home>
+			<remote>br.smat.ejb.investigacao.Investigacao</remote>
+			<local-home>br.smat.ejb.investigacao.InvestigacaoLocalHome</local-home>
+			<local>br.smat.ejb.investigacao.InvestigacaoLocal</local>
+			<ejb-class>br.smat.ejb.investigacao.InvestigacaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.investigacao.InvestigacaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064675922188">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="MedidaCorretivaInvestigacao">
+			<ejb-name>MedidaCorretivaInvestigacao</ejb-name>
+			<home>br.smat.ejb.medidacorretivainvestigacao.MedidaCorretivaInvestigacaoHome</home>
+			<remote>br.smat.ejb.medidacorretivainvestigacao.MedidaCorretivaInvestigacao</remote>
+			<local-home>br.smat.ejb.medidacorretivainvestigacao.MedidaCorretivaInvestigacaoLocalHome</local-home>
+			<local>br.smat.ejb.medidacorretivainvestigacao.MedidaCorretivaInvestigacaoLocal</local>
+			<ejb-class>br.smat.ejb.medidacorretivainvestigacao.MedidaCorretivaInvestigacaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.medidacorretivainvestigacao.MedidaCorretivaInvestigacaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064683041926">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="DadoInvestigacao">
+			<ejb-name>DadoInvestigacao</ejb-name>
+			<home>br.smat.ejb.dadoinvestigacao.DadoInvestigacaoHome</home>
+			<remote>br.smat.ejb.dadoinvestigacao.DadoInvestigacao</remote>
+			<local-home>br.smat.ejb.dadoinvestigacao.DadoInvestigacaoLocalHome</local-home>
+			<local>br.smat.ejb.dadoinvestigacao.DadoInvestigacaoLocal</local>
+			<ejb-class>br.smat.ejb.dadoinvestigacao.DadoInvestigacaoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.dadoinvestigacao.DadoInvestigacaoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1065054037572">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="RepresentanteEmpresa">
+			<ejb-name>RepresentanteEmpresa</ejb-name>
+			<home>br.smat.ejb.representanteempresa.RepresentanteEmpresaHome</home>
+			<remote>br.smat.ejb.representanteempresa.RepresentanteEmpresa</remote>
+			<local-home>br.smat.ejb.representanteempresa.RepresentanteEmpresaLocalHome</local-home>
+			<local>br.smat.ejb.representanteempresa.RepresentanteEmpresaLocal</local>
+			<ejb-class>br.smat.ejb.representanteempresa.RepresentanteEmpresaBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.representanteempresa.RepresentanteEmpresaKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1064690835442">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Modulo">
+			<ejb-name>Modulo</ejb-name>
+			<home>br.smat.controleacesso.ejb.modulo.ModuloHome</home>
+			<remote>br.smat.controleacesso.ejb.modulo.Modulo</remote>
+			<local-home>br.smat.controleacesso.ejb.modulo.ModuloLocalHome</local-home>
+			<local>br.smat.controleacesso.ejb.modulo.ModuloLocal</local>
+			<ejb-class>br.smat.controleacesso.ejb.modulo.ModuloBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.controleacesso.ejb.modulo.ModuloKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1065132967960">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Pagina">
+			<ejb-name>Pagina</ejb-name>
+			<home>br.smat.controleacesso.ejb.pagina.PaginaHome</home>
+			<remote>br.smat.controleacesso.ejb.pagina.Pagina</remote>
+			<local-home>br.smat.controleacesso.ejb.pagina.PaginaLocalHome</local-home>
+			<local>br.smat.controleacesso.ejb.pagina.PaginaLocal</local>
+			<ejb-class>br.smat.controleacesso.ejb.pagina.PaginaBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.controleacesso.ejb.pagina.PaginaKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1065132944767">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Usuario">
+			<ejb-name>Usuario</ejb-name>
+			<home>br.smat.controleacesso.ejb.usuario.UsuarioHome</home>
+			<remote>br.smat.controleacesso.ejb.usuario.Usuario</remote>
+			<local-home>br.smat.controleacesso.ejb.usuario.UsuarioLocalHome</local-home>
+			<local>br.smat.controleacesso.ejb.usuario.UsuarioLocal</local>
+			<ejb-class>br.smat.controleacesso.ejb.usuario.UsuarioBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.controleacesso.ejb.usuario.UsuarioKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1065132995690">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Monitor">
+			<ejb-name>Monitor</ejb-name>
+			<home>br.smat.ejb.monitor.MonitorHome</home>
+			<remote>br.smat.ejb.monitor.Monitor</remote>
+			<local-home>br.smat.ejb.monitor.MonitorLocalHome</local-home>
+			<local>br.smat.ejb.monitor.MonitorLocal</local>
+			<ejb-class>br.smat.ejb.monitor.MonitorBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.ejb.monitor.MonitorKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1066971274507">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="Grupo">
+			<ejb-name>Grupo</ejb-name>
+			<home>br.smat.controleacesso.ejb.grupo.GrupoHome</home>
+			<remote>br.smat.controleacesso.ejb.grupo.Grupo</remote>
+			<local-home>br.smat.controleacesso.ejb.grupo.GrupoLocalHome</local-home>
+			<local>br.smat.controleacesso.ejb.grupo.GrupoLocal</local>
+			<ejb-class>br.smat.controleacesso.ejb.grupo.GrupoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.controleacesso.ejb.grupo.GrupoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1067305453642">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<entity id="UsuarioGrupo">
+			<ejb-name>UsuarioGrupo</ejb-name>
+			<home>br.smat.controleacesso.ejb.usuariogrupo.UsuarioGrupoHome</home>
+			<remote>br.smat.controleacesso.ejb.usuariogrupo.UsuarioGrupo</remote>
+			<local-home>br.smat.controleacesso.ejb.usuariogrupo.UsuarioGrupoLocalHome</local-home>
+			<local>br.smat.controleacesso.ejb.usuariogrupo.UsuarioGrupoLocal</local>
+			<ejb-class>br.smat.controleacesso.ejb.usuariogrupo.UsuarioGrupoBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>br.smat.controleacesso.ejb.usuariogrupo.UsuarioGrupoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<resource-ref id="ResourceRef_1067305705374">
+				<description></description>
+				<res-ref-name>SQLServerDS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>		
+	</enterprise-beans>
+	<assembly-descriptor>
+		<container-transaction>
+			<method>
+				<ejb-name>AcidenteTransaction</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>save</method-name>
+				<method-params></method-params>
+			</method>
+			<method>
+				<ejb-name>AcidenteTransaction</ejb-name>
+				<method-intf>Local</method-intf>
+				<method-name>save</method-name>
+				<method-params></method-params>
+			</method>
+			<method>
+				<ejb-name>Empregador</ejb-name>
+				<method-intf>Home</method-intf>
+				<method-name>remove</method-name>
+			</method>
+			<method>
+				<ejb-name>Empregador</ejb-name>
+				<method-intf>Home</method-intf>
+				<method-name>remove</method-name>
+				<method-params>
+					<method-param>java.lang.Object</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>Empregador</ejb-name>
+				<method-intf>Home</method-intf>
+				<method-name>remove</method-name>
+				<method-params>
+					<method-param>javax.ejb.Handle</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>Empregador</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>remove</method-name>
+				<method-params></method-params>
+			</method>
+			<method>
+				<ejb-name>Empregador</ejb-name>
+				<method-intf>Local</method-intf>
+				<method-name>remove</method-name>
+				<method-params></method-params>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+	</assembly-descriptor>
+
+</ejb-jar>

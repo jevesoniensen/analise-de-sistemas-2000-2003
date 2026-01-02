@@ -1,0 +1,318 @@
+package br.smat.ejb.investigacao;
+import com.ibm.ejs.container.*;
+import com.ibm.ejs.persistence.*;
+import com.ibm.ejs.EJSException;
+import javax.ejb.*;
+import java.rmi.RemoteException;
+/**
+ * EJSBMPInvestigacaoHomeBean_50a64b27
+ * @generated
+ */
+public class EJSBMPInvestigacaoHomeBean_50a64b27 extends EJSHome {
+	/**
+	 * EJSBMPInvestigacaoHomeBean_50a64b27
+	 * @generated
+	 */
+	public EJSBMPInvestigacaoHomeBean_50a64b27()
+		throws java.rmi.RemoteException {
+		super();
+	}
+	/**
+	 * findByPrimaryKey
+	 * @generated
+	 */
+	public Investigacao findByPrimaryKey(
+		br.smat.ejb.investigacao.InvestigacaoKey primaryKey)
+		throws javax.ejb.FinderException, java.rmi.RemoteException {
+		Investigacao _EJS_bmp = (Investigacao) super.getBean(primaryKey);
+		if (_EJS_bmp == null) {
+			EntityBeanO _EJS_beanO = null;
+			br.smat.ejb.investigacao.InvestigacaoKey _EJS_key = null;
+			try {
+				_EJS_beanO = super.getFindByPrimaryKeyEntityBeanO();
+				InvestigacaoBean _EJS_bean =
+					(InvestigacaoBean) _EJS_beanO.getEnterpriseBean();
+				_EJS_key =
+					(
+						br
+							.smat
+							.ejb
+							.investigacao
+							.InvestigacaoKey) _EJS_bean
+							.ejbFindByPrimaryKey(
+						primaryKey);
+				super.releaseFinderEntityBeanO(_EJS_beanO);
+				_EJS_beanO = null;
+			} catch (javax.ejb.FinderException finderEx) {
+				super.releaseFinderEntityBeanO(_EJS_beanO);
+				_EJS_beanO = null;
+				throw finderEx;
+			} finally {
+				if (_EJS_beanO != null)
+					super.discardFinderEntityBeanO(_EJS_beanO);
+			}
+			_EJS_bmp =
+				(Investigacao) super.activateBean((java.lang.Object) _EJS_key);
+		}
+		return _EJS_bmp;
+	}
+	/**
+	 * create
+	 * @generated
+	 */
+	public br.smat.ejb.investigacao.Investigacao create(
+		int agenteSaude,
+		int acidente,
+		java.lang.String titulo,
+		java.lang.String obsGerais)
+		throws javax.ejb.CreateException, java.rmi.RemoteException {
+		BeanO beanO = null;
+		br.smat.ejb.investigacao.Investigacao result = null;
+		boolean createFailed = false;
+		boolean preCreateFlag = false;
+		try {
+			beanO = super.createBeanO();
+			br.smat.ejb.investigacao.InvestigacaoBean bean =
+				(br.smat.ejb.investigacao.InvestigacaoBean) beanO
+					.getEnterpriseBean();
+			preCreateFlag = super.preEjbCreate(beanO);
+			br.smat.ejb.investigacao.InvestigacaoKey _primaryKey =
+				bean.ejbCreate(agenteSaude, acidente, titulo, obsGerais);
+			result =
+				(br.smat.ejb.investigacao.Investigacao) super.postCreate(
+					beanO,
+					_primaryKey,
+					true);
+			bean.ejbPostCreate(agenteSaude, acidente, titulo, obsGerais);
+			super.afterPostCreate(beanO, _primaryKey);
+		} catch (javax.ejb.CreateException ex) {
+			createFailed = true;
+			throw ex;
+		} catch (java.rmi.RemoteException ex) {
+			createFailed = true;
+			throw ex;
+		} catch (Throwable ex) {
+			createFailed = true;
+			throw new CreateFailureException(ex);
+		} finally {
+			if (preCreateFlag && !createFailed)
+				super.afterPostCreateCompletion(beanO);
+			if (createFailed) {
+				super.createFailure(beanO);
+			}
+		}
+		return result;
+	}
+	/**
+	 * findAllInvestigacao
+	 * @generated
+	 */
+	public java.util.Collection findAllInvestigacao()
+		throws javax.ejb.FinderException, java.rmi.RemoteException {
+		java.util.Collection result = null;
+		EntityBeanO beanO = null;
+
+		try {
+			beanO = super.getFinderEntityBeanO();
+			InvestigacaoBean bean =
+				(InvestigacaoBean) beanO.getEnterpriseBean();
+			java.util.Collection pKeys = bean.ejbFindAllInvestigacao();
+			result = super.getCMP20Collection(pKeys);
+			super.releaseFinderEntityBeanO(beanO);
+			beanO = null;
+		} catch (javax.ejb.FinderException finderEx) {
+			super.releaseFinderEntityBeanO(beanO);
+			beanO = null;
+			throw finderEx;
+		} finally {
+			if (beanO != null)
+				super.discardFinderEntityBeanO(beanO);
+		}
+		return result;
+	}
+	/**
+	 * findByPrimaryKey_Local
+	 * @generated
+	 */
+	public InvestigacaoLocal findByPrimaryKey_Local(
+		br.smat.ejb.investigacao.InvestigacaoKey primaryKey)
+		throws javax.ejb.FinderException, java.rmi.RemoteException {
+		InvestigacaoLocal _EJS_bmp =
+			(InvestigacaoLocal) super.getBean_Local(primaryKey);
+		if (_EJS_bmp == null) {
+			EntityBeanO _EJS_beanO = null;
+			br.smat.ejb.investigacao.InvestigacaoKey _EJS_key = null;
+			try {
+				_EJS_beanO = super.getFindByPrimaryKeyEntityBeanO();
+				InvestigacaoBean _EJS_bean =
+					(InvestigacaoBean) _EJS_beanO.getEnterpriseBean();
+				_EJS_key =
+					(
+						br
+							.smat
+							.ejb
+							.investigacao
+							.InvestigacaoKey) _EJS_bean
+							.ejbFindByPrimaryKey(
+						primaryKey);
+				super.releaseFinderEntityBeanO(_EJS_beanO);
+				_EJS_beanO = null;
+			} catch (javax.ejb.FinderException finderEx) {
+				super.releaseFinderEntityBeanO(_EJS_beanO);
+				_EJS_beanO = null;
+				throw finderEx;
+			} finally {
+				if (_EJS_beanO != null)
+					super.discardFinderEntityBeanO(_EJS_beanO);
+			}
+			_EJS_bmp =
+				(InvestigacaoLocal) super.activateBean_Local(
+					(java.lang.Object) _EJS_key);
+		}
+		return _EJS_bmp;
+	}
+	/**
+	 * create_Local
+	 * @generated
+	 */
+	public br.smat.ejb.investigacao.InvestigacaoLocal create_Local(
+		int agenteSaude,
+		int acidente,
+		java.lang.String titulo,
+		java.lang.String obsGerais)
+		throws javax.ejb.CreateException, java.rmi.RemoteException {
+		BeanO beanO = null;
+		br.smat.ejb.investigacao.InvestigacaoLocal result = null;
+		boolean createFailed = false;
+		boolean preCreateFlag = false;
+		try {
+			beanO = super.createBeanO();
+			br.smat.ejb.investigacao.InvestigacaoBean bean =
+				(br.smat.ejb.investigacao.InvestigacaoBean) beanO
+					.getEnterpriseBean();
+			preCreateFlag = super.preEjbCreate(beanO);
+			br.smat.ejb.investigacao.InvestigacaoKey _primaryKey =
+				bean.ejbCreate(agenteSaude, acidente, titulo, obsGerais);
+			result =
+				(
+					br
+						.smat
+						.ejb
+						.investigacao
+						.InvestigacaoLocal) super
+						.postCreate_Local(
+					beanO,
+					_primaryKey,
+					true);
+			bean.ejbPostCreate(agenteSaude, acidente, titulo, obsGerais);
+			super.afterPostCreate(beanO, _primaryKey);
+		} catch (javax.ejb.CreateException ex) {
+			createFailed = true;
+			throw ex;
+		} catch (java.rmi.RemoteException ex) {
+			createFailed = true;
+			throw ex;
+		} catch (Throwable ex) {
+			createFailed = true;
+			throw new CreateFailureException(ex);
+		} finally {
+			if (preCreateFlag && !createFailed)
+				super.afterPostCreateCompletion(beanO);
+			if (createFailed) {
+				super.createFailure(beanO);
+			}
+		}
+		return result;
+	}
+	/**
+	 * findAllInvestigacao_Local
+	 * @generated
+	 */
+	public java.util.Collection findAllInvestigacao_Local()
+		throws javax.ejb.FinderException, java.rmi.RemoteException {
+		java.util.Collection result = null;
+		EntityBeanO beanO = null;
+
+		try {
+			beanO = super.getFinderEntityBeanO();
+			InvestigacaoBean bean =
+				(InvestigacaoBean) beanO.getEnterpriseBean();
+			java.util.Collection pKeys = bean.ejbFindAllInvestigacao();
+			result = super.getCMP20Collection_Local(pKeys);
+			super.releaseFinderEntityBeanO(beanO);
+			beanO = null;
+		} catch (javax.ejb.FinderException finderEx) {
+			super.releaseFinderEntityBeanO(beanO);
+			beanO = null;
+			throw finderEx;
+		} finally {
+			if (beanO != null)
+				super.discardFinderEntityBeanO(beanO);
+		}
+		return result;
+	}
+	/**
+	 * findByAcidente
+	 * @generated
+	 */
+	public br.smat.ejb.investigacao.Investigacao findByAcidente(int acidente)
+		throws javax.ejb.FinderException, java.rmi.RemoteException {
+		br.smat.ejb.investigacao.Investigacao result = null;
+		EntityBeanO beanO = null;
+
+		try {
+			beanO = super.getFinderEntityBeanO();
+			InvestigacaoBean bean =
+				(InvestigacaoBean) beanO.getEnterpriseBean();
+			br.smat.ejb.investigacao.InvestigacaoKey pKey =
+				bean.ejbFindByAcidente(acidente);
+			result =
+				(br.smat.ejb.investigacao.Investigacao) super.activateBean(
+					(java.lang.Object) pKey);
+			super.releaseFinderEntityBeanO(beanO);
+			beanO = null;
+		} catch (javax.ejb.FinderException finderEx) {
+			super.releaseFinderEntityBeanO(beanO);
+			beanO = null;
+			throw finderEx;
+		} finally {
+			if (beanO != null)
+				super.discardFinderEntityBeanO(beanO);
+		}
+		return result;
+	}
+	/**
+	 * findByAcidente_Local
+	 * @generated
+	 */
+	public br.smat.ejb.investigacao.InvestigacaoLocal findByAcidente_Local(
+		int acidente)
+		throws javax.ejb.FinderException, java.rmi.RemoteException {
+		br.smat.ejb.investigacao.InvestigacaoLocal result = null;
+		EntityBeanO beanO = null;
+
+		br.smat.ejb.investigacao.InvestigacaoKey pKey = null;
+		try {
+			beanO = super.getFinderEntityBeanO();
+			InvestigacaoBean bean =
+				(InvestigacaoBean) beanO.getEnterpriseBean();
+			pKey = bean.ejbFindByAcidente(acidente);
+			result =
+				(br
+					.smat
+					.ejb
+					.investigacao
+					.InvestigacaoLocal) activateBean_Local(pKey);
+			super.releaseFinderEntityBeanO(beanO);
+			beanO = null;
+		} catch (javax.ejb.FinderException finderEx) {
+			super.releaseFinderEntityBeanO(beanO);
+			beanO = null;
+			throw finderEx;
+		} finally {
+			if (beanO != null)
+				super.discardFinderEntityBeanO(beanO);
+		}
+		return result;
+	}
+}

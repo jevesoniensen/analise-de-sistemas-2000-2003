@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application PUBLIC "-//Sun Microsystems, Inc.//DTD J2EE Application 1.3//EN" "http://java.sun.com/dtd/application_1_3.dtd">
+<application id="Application_ID">
+	<display-name>smat</display-name>
+	<module id="EjbModule_1052789271509">
+		<ejb>smatEJB.jar</ejb>
+	</module>
+	<module id="WebModule_1054259932510">
+		<web>
+			<web-uri>smatWeb1.war</web-uri>
+			<context-root>smatWeb</context-root>
+		</web>
+	</module>
+</application>

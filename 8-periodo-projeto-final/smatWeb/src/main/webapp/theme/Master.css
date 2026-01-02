@@ -1,0 +1,117 @@
+BODY
+{
+    COLOR: #993300;
+	font-size: 11px;    
+    FONT-FAMILY: 'Verdana';
+}
+H1
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Verdana';
+    font-size: 18px;               
+}
+H2
+{
+    COLOR: #000000;
+    FONT-FAMILY: 'Verdana';
+    TEXT-TRANSFORM: capitalize
+}
+H3
+{
+    COLOR: #3367A3;
+    FONT-FAMILY: 'Verdana';
+    TEXT-TRANSFORM: none;
+}
+
+H4
+{
+    COLOR: red;
+    FONT-FAMILY: 'Verdana';
+    TEXT-TRANSFORM: none;
+}
+
+H5
+{
+    COLOR: #000000;
+    FONT-FAMILY: 'Verdana';
+    TEXT-TRANSFORM: capitalize
+}
+H6
+{
+    COLOR: #000000;
+    FONT-FAMILY: 'Verdana';
+    TEXT-TRANSFORM: capitalize
+}
+TH {
+	font-size: 10px;
+	color: #3367A3;
+    font-family: 'Verdana';	
+}
+.TEXT
+{
+	    font-family: 'Verdana';	
+        font-size: 9px;
+        color: #666666;
+}
+.TEXTAREA
+{
+	    font-family: 'Verdana';	
+        font-size: 9px;
+        color: #666666;
+}
+.TEXTAREADISABLE
+{
+	    font-family: 'Verdana';	
+        font-size: 9px;
+        color: #666666;
+        background-color: #C0C0C0;
+}
+.TEXTDISABLE
+{
+	    font-family: 'Verdana';	
+        font-size: 9px;
+        color: #666666;
+        background-color: #C0C0C0;
+}
+.SELECT{
+ 	    font-family: 'Verdana';	
+        font-size: 9px;
+        color: #666666;
+}
+.OPTION{
+ 	    font-family: 'Verdana';	
+        font-size: 9px;
+        color: #666666;
+}
+.BOTAO
+{
+	    font-family: 'Verdana';	
+        font-size: 9px;
+        color: #000000;
+        background-color: #C0C0C0;	
+}
+LABEL{
+        font-family: 'Verdana';
+        font-size:9px;
+        color: #666666;       
+}
+.RADIO{
+	    font-family: 'Verdana';	
+        font-size: 9px;
+        color: #666666;
+}
+A {
+		TEXT-DECORATION: underline;	
+        font-family: 'Verdana';
+        font-size: 9px;     
+}
+FONT {
+	    font-family: 'Verdana';	
+        font-size: 9px;
+        color: #666666;
+}
+STRONG{
+        font-family: 'Verdana';
+        font-size: 20px;
+		color: red;  	
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path=""/>
+    <classpathentry exported="true" kind="var" path="JRE_LIB"
+        rootpath="JRE_SRCROOT" sourcepath="JRE_SRC"/>
+    <classpathentry exported="true" kind="lib" path="G:/IBM/WebSphere Studio/runtimes/base_v5/java/jre/lib/ext/mail.jar"/>
+    <classpathentry exported="true" kind="lib" path="G:/IBM/WebSphere Studio/runtimes/base_v5/java/jre/lib/ext/activation.jar"/>
+    <classpathentry kind="output" path="bin"/>
+</classpath>

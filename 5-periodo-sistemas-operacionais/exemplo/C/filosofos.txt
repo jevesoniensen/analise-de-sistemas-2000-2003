@@ -1,0 +1,36 @@
+Programaçao Concorrente
+
+Problema dos filosofos jantando.
+
+Versao usando mutexes:
+  - pthread_mutex_init
+  - pthread_mutex_lock
+  - pthread_mutex_unlock
+  - pthread_mutex_destroy
+
+Esta implementaçao de uma possivel soluçao para o
+problema dos filosofos foi implementada no Linux.
+
+Copiar os arquivos filosofos.c e filosofos.h para
+um diretorio qualquer no Linux.
+
+Compilar e Linkeditar atraves do seguinte comando:
+  gcc -Wall -o filosofos filosofos.c -lpthread
+
+Para executar digite:
+  ./filosofos
+
+Sera exibido o estado de cada filosofo (1 a 5).
+
+Para interromper digite CTRL+C e aguarde a
+mensagem de fim.
+
+Para armazenar o resultado da execuçao em
+um arquivo digite:
+  ./filosofos > arquivo.txt
+
+Informaçoes sobre as funçoes utilizadas no programa
+podem ser obtidas nas "man pages" do Linux.
+  ex: man pthread_create
+
+Alexandre Thieme Reis.

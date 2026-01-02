@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmlns:commonbnd="commonbnd.xmi" xmlns:common="common.xmi" xmi:id="EJBJarBinding_1052789980318">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1052789980318" jndiName="ejb/br/smat/ejb/estado/EstadoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Estado"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1052961134887" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1052961134887"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053207793871" jndiName="ejb/br/smat/ejb/area/AreaHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Area"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053207918610" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053207918610"/>
+    </resRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1053745273183" jndiName="ejb/br/smat/ejb/area/AreaHome">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EjbRef_1053745273183"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1053745273203" jndiName="ejb/br/smat/ejb/area/AreaHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1053745273203"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053210079467" jndiName="ejb/br/smat/ejb/diagnostico/DiagnosticoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Diagnostico"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053210079467" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053210079467"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053394564595" jndiName="ejb/br/smat/ejb/estadocivil/EstadoCivilHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#EstadoCivil"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053394564595" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053394564595"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053556948971" jndiName="ejb/br/smat/ejb/vinculoempregaticio/VinculoEmpregaticioHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#VinculoEmpregaticio"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053556985393" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053556985393"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053652731845" jndiName="ejb/br/smat/ejb/tipoacidente/TipoAcidenteHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#TipoAcidente"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053653042572" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053653042572"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053656389254" jndiName="ejb/br/smat/ejb/emitente/EmitenteHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Emitente"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053656770142" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053656770152"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053656441900" jndiName="ejb/br/smat/ejb/tipolocalacidente/TipoLocalAcidenteHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#TipoLocalAcidente"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053656770172" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053656770172"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053656491551" jndiName="ejb/br/smat/ejb/ocupacao/OcupacaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Ocupacao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053656770182" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053656770182"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053656537698" jndiName="ejb/br/smat/ejb/fonte/FonteHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Fonte"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053656770192" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053656770192"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053660931065" jndiName="ejb/br/smat/ejb/session/AcessoBancoHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AcessoBanco"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1053746218853" jndiName="ejb/br/smat/ejb/area/AreaLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1053746218853"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053738581922" jndiName="ejb/br/smat/ejb/ramoatividade/RamoAtividadeHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#RamoAtividade"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053739800364" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053739800364"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053799068140" jndiName="ejb/br/smat/ejb/agentecausador/AgenteCausadorHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#AgenteCausador"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053801223209" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053801223209"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053803407339" jndiName="ejb/br/smat/ejb/regional/RegionalHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Regional"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053809318880" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053809318880"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053806152857" jndiName="ejb/br/smat/ejb/municipio/MunicipioHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Municipio"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053809349614" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053809349614"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053814320742" jndiName="ejb/br/smat/ejb/locallesao/LocalLesaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#LocalLesao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053814320742" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053814320742"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053814449117" jndiName="ejb/br/smat/ejb/medico/MedicoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Medico"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053814449117" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053814449117"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053814630107" jndiName="ejb/br/smat/ejb/tipoempregador/TipoEmpregadorHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#TipoEmpregador"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053814630107" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053814630107"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053821530015" jndiName="ejb/br/smat/ejb/telefoneregional/TelefoneRegionalHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#TelefoneRegional"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053873038527" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053873038527"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1053994634540" jndiName="ejb/br/smat/ejb/agentesaude/AgenteSaudeHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#AgenteSaude"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1053996926906" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1053996926906"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1054003560955" jndiName="ejb/br/smat/ejb/empregador/EmpregadorHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Empregador"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1054003977444" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1054003977444"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1054170387138" jndiName="ejb/br/smat/ejb/telefoneempregador/TelefoneEmpregadorHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#TelefoneEmpregador"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1054170387138" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1054170387138"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1054176428235" jndiName="ejb/br/smat/ejb/trabalhador/TrabalhadorHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Trabalhador"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1054176428235" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1054176428235"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1054419876690" jndiName="ejb/br/smat/ejb/acidente/AcidenteHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Acidente"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1054419876690" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1054419876690"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1054420800558" jndiName="ejb/br/smat/ejb/localatendimento/LocalAtendimentoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#LocalAtendimento"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1054420800558" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1054420800558"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1054593151246" jndiName="ejb/br/smat/ejb/locallesaoacidente/LocalLesaoAcidenteHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#LocalLesaoAcidente"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1054593151246" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1054593151246"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1054766956781" jndiName="ejb/br/smat/ejb/testemunha/TestemunhaHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Testemunha"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1054766956791" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1054766956791"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1055114154383" jndiName="ejb/br/smat/transaction/empregadortransaction/EmpregadorTransactionHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#EmpregadorTransaction"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1055289199814" jndiName="ejb/br/smat/objetosauxiliares/generico/GenericoHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Generico"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1055289504151" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1055289504161"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1055379829860" jndiName="ejb/br/smat/ejb/campo/CampoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Campo"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1055379829860" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1055379829860"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1056050260885" jndiName="ejb/br/smat/transaction/acidentetransaction/AcidenteTransactionHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AcidenteTransaction"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1056235632005" jndiName="ejb/br/smat/ejb/relatoriosalvo/RelatorioSalvoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#RelatorioSalvo"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1056235632005" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1056235632005"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1063848266725" jndiName="ejb/br/smat/ejb/tipodepoimento/TipoDepoimentoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#TipoDepoimento"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1063923187608" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1063923187608"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1063930233770" jndiName="ejb/br/smat/ejb/status/StatusHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Status"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1063935313254" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1063935313254"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064059865024" jndiName="ejb/br/smat/ejb/grauconformidade/GrauConformidadeHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#GrauConformidade"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064063806020" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064063806020"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064078307742" jndiName="ejb/br/smat/ejb/tipomedidacorretiva/TipoMedidaCorretivaHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#TipoMedidaCorretiva"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064078477426" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064078477426"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064081972171" jndiName="ejb/br/smat/ejb/pontofiscalizacao/PontoFiscalizacaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#PontoFiscalizacao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064084647615" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064084647615"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064359004829" jndiName="ejb/br/smat/ejb/pontofiscalizacaoramotividade/PontoFiscalizacaoRamoAtividadeHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#PontoFiscalizacaoRamoAtividade"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064363718053" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064363718053"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064364366375" jndiName="ejb/br/smat/ejb/itemfiscalizacao/ItemFiscalizacaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ItemFiscalizacao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064364405502" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064364405502"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064367534210" jndiName="ejb/br/smat/ejb/pontofiscalizacaoitemfiscalizacao/PontoFiscalizacaoItemFiscalizacaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#PontoFiscalizacaoItemFiscalizacao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064367608778" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064367608778"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064448670626" jndiName="ejb/br/smat/ejb/fiscalizacao/FiscalizacaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Fiscalizacao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064448713418" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064448713418"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064528544505" jndiName="ejb/br/smat/ejb/tramitefiscalizacao/TramiteFiscalizacaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#TramiteFiscalizacao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064536494727" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064536494737"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064538843745" jndiName="ejb/br/smat/ejb/roteiros/RoteirosHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Roteiros"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064539229790" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064539229790"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064668594772" jndiName="ejb/br/smat/ejb/medidacorretivafiscalizacao/MedidaCorretivaFiscalizacaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#MedidaCorretivaFiscalizacao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064673536508" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064673536508"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064675887348" jndiName="ejb/br/smat/ejb/investigacao/InvestigacaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Investigacao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064675922188" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064675922188"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064682988830" jndiName="ejb/br/smat/ejb/medidacorretivainvestigacao/MedidaCorretivaInvestigacaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#MedidaCorretivaInvestigacao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064683041926" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064683041926"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064687888255" jndiName="ejb/br/smat/ejb/dadoinvestigacao/DadoInvestigacaoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#DadoInvestigacao"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1065054037572" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1065054037572"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1064690802445" jndiName="ejb/br/smat/ejb/representanteempresa/RepresentanteEmpresaHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#RepresentanteEmpresa"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1064690835442" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1064690835442"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1065132836641" jndiName="ejb/br/smat/controleacesso/ejb/modulo/ModuloHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Modulo"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1065132967960" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1065132967960"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1065132864341" jndiName="ejb/br/smat/controleacesso/ejb/pagina/PaginaHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Pagina"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1065132944767" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1065132944767"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1065132894705" jndiName="ejb/br/smat/controleacesso/ejb/usuario/UsuarioHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Usuario"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1065132995690" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1065132995690"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1066971203795" jndiName="ejb/br/smat/ejb/monitor/MonitorHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Monitor"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1066971274507" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1066971274507"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1067305318277" jndiName="ejb/br/smat/controleacesso/ejb/grupo/GrupoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Grupo"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1067305453642" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1067305453642"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1067305641191" jndiName="ejb/br/smat/controleacesso/ejb/usuariogrupo/UsuarioGrupoHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#UsuarioGrupo"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1067305705374" jndiName="jdbc/SQLServerDS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1067305705374"/>
+    </resRefBindings>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>
